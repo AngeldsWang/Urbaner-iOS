@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3506FF19F526B972E852C9CF /* Pods_Urbaner_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506D8940C8CD3AB8C3FB3DA8 /* Pods_Urbaner_iOSTests.framework */; };
-		3C6A78DA02D4D3224F8158F1 /* Pods_UrbanerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F81CD875E5E8E06DB5C619 /* Pods_UrbanerTests.framework */; };
-		A85205029C89BAA3D44B3ED0 /* Pods_Urbaner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1777962E9868C9D4894C959C /* Pods_Urbaner.framework */; };
-		B21323964B296DA5D199EB69 /* Pods_UrbanerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3E672DE6979FD961691203 /* Pods_UrbanerUITests.framework */; };
 		B47C4FEB944B4EB1D6517E10 /* Pods_Urbaner_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B1F4757629EEFA6C20FCBE /* Pods_Urbaner_iOSUITests.framework */; };
 		E7177C5BA5D4D377F00C5684 /* Pods_Urbaner_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC9DB79329365E785BD9DA5 /* Pods_Urbaner_iOS.framework */; };
 		F911F4E21ED92EED00FCB6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F911F4E11ED92EED00FCB6D7 /* Assets.xcassets */; };
@@ -45,23 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02F81CD875E5E8E06DB5C619 /* Pods_UrbanerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrbanerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		09E7EBE6274AFFA9FF84F290 /* Pods-Urbaner-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOSTests/Pods-Urbaner-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1777962E9868C9D4894C959C /* Pods_Urbaner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Urbaner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22D0155E2DDA2642DD738438 /* Pods-Urbaner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner/Pods-Urbaner.debug.xcconfig"; sourceTree = "<group>"; };
-		4BD21204FB10832789D3773D /* Pods-UrbanerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrbanerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UrbanerTests/Pods-UrbanerTests.release.xcconfig"; sourceTree = "<group>"; };
+		26A044318295466FF8D69F69 /* Pods-Urbaner-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOS/Pods-Urbaner-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		4C6BA1B50E65C07EF69E598A /* Pods-Urbaner-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOSTests/Pods-Urbaner-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		4CC9DB79329365E785BD9DA5 /* Pods_Urbaner_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Urbaner_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		506D8940C8CD3AB8C3FB3DA8 /* Pods_Urbaner_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Urbaner_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B1F4757629EEFA6C20FCBE /* Pods_Urbaner_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Urbaner_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		71F0CB9501CF0D59A567CC84 /* Pods-Urbaner-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOSUITests/Pods-Urbaner-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
-		75F0687FF1B91CDE4BA63B6F /* Pods-Urbaner-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOSUITests/Pods-Urbaner-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		94A4FD08EB41E087C9BCA627 /* Pods-UrbanerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrbanerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UrbanerTests/Pods-UrbanerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A552ED824D9F11A3C4957020 /* Pods-Urbaner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner/Pods-Urbaner.release.xcconfig"; sourceTree = "<group>"; };
-		A622E13BB6C5ABA2727DFDBE /* Pods-UrbanerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrbanerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UrbanerUITests/Pods-UrbanerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BE9B1D3D24C0879C60DEF0D4 /* Pods-UrbanerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrbanerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UrbanerUITests/Pods-UrbanerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C72DB3BC40B5071C8ADB3BE0 /* Pods-Urbaner-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOS/Pods-Urbaner-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		D1B50D38C6353AE7801559C6 /* Pods-Urbaner-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOSTests/Pods-Urbaner-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		DE3E672DE6979FD961691203 /* Pods_UrbanerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrbanerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		614820EDA56496E9895D0AAA /* Pods-Urbaner-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOSUITests/Pods-Urbaner-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D351C19766F4D7BDD2A6291D /* Pods-Urbaner-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOSUITests/Pods-Urbaner-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E05E7F2B46ED50C7A32FECC5 /* Pods-Urbaner-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOS/Pods-Urbaner-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		EB408E5C94A4EFFC5FA8F8BC /* Pods-Urbaner-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOSTests/Pods-Urbaner-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F911F4E01ED9114600FCB6D7 /* Urbaner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Urbaner.entitlements; sourceTree = "<group>"; };
 		F911F4E11ED92EED00FCB6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F92571011ED5E3E1009340B5 /* UrbanLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrbanLabel.swift; sourceTree = "<group>"; };
@@ -81,7 +70,6 @@
 		F9B4DFB61EC8C72A00C8F81F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F9D6A1801ECA6AF200325282 /* SlideHorSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideHorSegue.swift; sourceTree = "<group>"; };
 		F9D6A1831ECA798F00325282 /* DismissSlideHorSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissSlideHorSegue.swift; sourceTree = "<group>"; };
-		FE4B370D75907A2A8939E79B /* Pods-Urbaner-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOS/Pods-Urbaner-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A85205029C89BAA3D44B3ED0 /* Pods_Urbaner.framework in Frameworks */,
 				E7177C5BA5D4D377F00C5684 /* Pods_Urbaner_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C6A78DA02D4D3224F8158F1 /* Pods_UrbanerTests.framework in Frameworks */,
 				3506FF19F526B972E852C9CF /* Pods_Urbaner_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,7 +93,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B21323964B296DA5D199EB69 /* Pods_UrbanerUITests.framework in Frameworks */,
 				B47C4FEB944B4EB1D6517E10 /* Pods_Urbaner_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,36 +100,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BDBE021BFF3C1CE82B2AD85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E05E7F2B46ED50C7A32FECC5 /* Pods-Urbaner-iOS.debug.xcconfig */,
+				26A044318295466FF8D69F69 /* Pods-Urbaner-iOS.release.xcconfig */,
+				EB408E5C94A4EFFC5FA8F8BC /* Pods-Urbaner-iOSTests.debug.xcconfig */,
+				4C6BA1B50E65C07EF69E598A /* Pods-Urbaner-iOSTests.release.xcconfig */,
+				D351C19766F4D7BDD2A6291D /* Pods-Urbaner-iOSUITests.debug.xcconfig */,
+				614820EDA56496E9895D0AAA /* Pods-Urbaner-iOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9283FF23716D35A33B89A9C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1777962E9868C9D4894C959C /* Pods_Urbaner.framework */,
-				02F81CD875E5E8E06DB5C619 /* Pods_UrbanerTests.framework */,
-				DE3E672DE6979FD961691203 /* Pods_UrbanerUITests.framework */,
 				4CC9DB79329365E785BD9DA5 /* Pods_Urbaner_iOS.framework */,
 				506D8940C8CD3AB8C3FB3DA8 /* Pods_Urbaner_iOSTests.framework */,
 				59B1F4757629EEFA6C20FCBE /* Pods_Urbaner_iOSUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C790F1CF707E0DE465AE6569 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				22D0155E2DDA2642DD738438 /* Pods-Urbaner.debug.xcconfig */,
-				A552ED824D9F11A3C4957020 /* Pods-Urbaner.release.xcconfig */,
-				94A4FD08EB41E087C9BCA627 /* Pods-UrbanerTests.debug.xcconfig */,
-				4BD21204FB10832789D3773D /* Pods-UrbanerTests.release.xcconfig */,
-				A622E13BB6C5ABA2727DFDBE /* Pods-UrbanerUITests.debug.xcconfig */,
-				BE9B1D3D24C0879C60DEF0D4 /* Pods-UrbanerUITests.release.xcconfig */,
-				C72DB3BC40B5071C8ADB3BE0 /* Pods-Urbaner-iOS.debug.xcconfig */,
-				FE4B370D75907A2A8939E79B /* Pods-Urbaner-iOS.release.xcconfig */,
-				09E7EBE6274AFFA9FF84F290 /* Pods-Urbaner-iOSTests.debug.xcconfig */,
-				D1B50D38C6353AE7801559C6 /* Pods-Urbaner-iOSTests.release.xcconfig */,
-				75F0687FF1B91CDE4BA63B6F /* Pods-Urbaner-iOSUITests.debug.xcconfig */,
-				71F0CB9501CF0D59A567CC84 /* Pods-Urbaner-iOSUITests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		F9B4DF6D1EC8166900C8F81F = {
@@ -154,8 +130,8 @@
 				F9B4DF8D1EC8166900C8F81F /* UrbanerTests */,
 				F9B4DF981EC8166A00C8F81F /* UrbanerUITests */,
 				F9B4DF771EC8166900C8F81F /* Products */,
-				C790F1CF707E0DE465AE6569 /* Pods */,
 				9283FF23716D35A33B89A9C3 /* Frameworks */,
+				1BDBE021BFF3C1CE82B2AD85 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -653,7 +629,7 @@
 		};
 		F9B4DF9F1EC8166A00C8F81F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C72DB3BC40B5071C8ADB3BE0 /* Pods-Urbaner-iOS.debug.xcconfig */;
+			baseConfigurationReference = E05E7F2B46ED50C7A32FECC5 /* Pods-Urbaner-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Urbaner/Urbaner.entitlements;
@@ -668,7 +644,7 @@
 		};
 		F9B4DFA01EC8166A00C8F81F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE4B370D75907A2A8939E79B /* Pods-Urbaner-iOS.release.xcconfig */;
+			baseConfigurationReference = 26A044318295466FF8D69F69 /* Pods-Urbaner-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Urbaner/Urbaner.entitlements;
@@ -683,7 +659,7 @@
 		};
 		F9B4DFA21EC8166A00C8F81F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09E7EBE6274AFFA9FF84F290 /* Pods-Urbaner-iOSTests.debug.xcconfig */;
+			baseConfigurationReference = EB408E5C94A4EFFC5FA8F8BC /* Pods-Urbaner-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -699,7 +675,7 @@
 		};
 		F9B4DFA31EC8166A00C8F81F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1B50D38C6353AE7801559C6 /* Pods-Urbaner-iOSTests.release.xcconfig */;
+			baseConfigurationReference = 4C6BA1B50E65C07EF69E598A /* Pods-Urbaner-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -715,7 +691,7 @@
 		};
 		F9B4DFA51EC8166A00C8F81F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75F0687FF1B91CDE4BA63B6F /* Pods-Urbaner-iOSUITests.debug.xcconfig */;
+			baseConfigurationReference = D351C19766F4D7BDD2A6291D /* Pods-Urbaner-iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = TTPWCC4CDF;
@@ -730,7 +706,7 @@
 		};
 		F9B4DFA61EC8166A00C8F81F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71F0CB9501CF0D59A567CC84 /* Pods-Urbaner-iOSUITests.release.xcconfig */;
+			baseConfigurationReference = 614820EDA56496E9895D0AAA /* Pods-Urbaner-iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = TTPWCC4CDF;

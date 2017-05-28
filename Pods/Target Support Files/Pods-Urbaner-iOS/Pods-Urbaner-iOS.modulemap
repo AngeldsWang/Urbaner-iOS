@@ -1,0 +1,6 @@
+framework module Pods_Urbaner_iOS {
+  umbrella header "Pods-Urbaner-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

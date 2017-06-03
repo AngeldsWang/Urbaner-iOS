@@ -14,7 +14,7 @@
         <!--Launch View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" customClass="LaunchViewController" customModule="Urbaner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="01J-lp-oVM" customClass="LaunchViewController" customModule="Urbaner_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
@@ -28,7 +28,7 @@
                                 <color key="backgroundColor" red="1" green="0.32295754537211463" blue="0.66832105111815121" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.91306349948459109" green="1" blue="0.96699164591690667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URBANER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="by6-Wb-bON" customClass="UrbanLabel" customModule="Urbaner" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URBANER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="by6-Wb-bON" customClass="UrbanLabel" customModule="Urbaner_iOS" customModuleProvider="target">
                                 <rect key="frame" x="77" y="143" width="221" height="58"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
                                 <color key="textColor" red="0.89918722749361535" green="0.89918722749361535" blue="0.89918722749361535" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,10 +45,10 @@
                                     <color key="titleColor" red="0.89918722750000002" green="0.89918722750000002" blue="0.89918722750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mXf-GA-6KQ" kind="custom" identifier="loginSegue" customClass="SlideHorSegue" customModule="Urbaner" customModuleProvider="target" id="yCW-49-44N"/>
+                                    <segue destination="mXf-GA-6KQ" kind="custom" identifier="loginSegue" customClass="SlideHorSegue" customModule="Urbaner_iOS" customModuleProvider="target" id="yCW-49-44N"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZI-GE-9p0" customClass="UrbanLabel" customModule="Urbaner" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZI-GE-9p0" customClass="UrbanLabel" customModule="Urbaner_iOS" customModuleProvider="target">
                                 <rect key="frame" x="97" y="439" width="180" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.89918722750000002" green="0.89918722750000002" blue="0.89918722750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -65,13 +65,13 @@
                                     <color key="titleColor" red="0.89918722750000002" green="0.89918722750000002" blue="0.89918722750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zrg-jV-Sea" customClass="UrbanLabel" customModule="Urbaner" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zrg-jV-Sea" customClass="UrbanLabel" customModule="Urbaner_iOS" customModuleProvider="target">
                                 <rect key="frame" x="163" y="372" width="49" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.89918722750000002" green="0.89918722750000002" blue="0.89918722750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGE-S5-dT6" customClass="UrbanLabel" customModule="Urbaner" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGE-S5-dT6" customClass="UrbanLabel" customModule="Urbaner_iOS" customModuleProvider="target">
                                 <rect key="frame" x="157" y="500" width="60" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.89918722750000002" green="0.89918722750000002" blue="0.89918722750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -106,7 +106,7 @@
                         <outlet property="loginLabel" destination="Zrg-jV-Sea" id="GQc-Ge-Kif"/>
                         <outlet property="signupLabel" destination="BGE-S5-dT6" id="Ilw-E2-48G"/>
                         <outlet property="titleLabel" destination="by6-Wb-bON" id="G4t-YC-R94"/>
-                        <segue destination="ayt-Pf-QHD" kind="custom" identifier="moveToMainFromLaunch" customClass="SlideHorSegue" customModule="Urbaner" customModuleProvider="target" id="5bj-Fj-9Jf"/>
+                        <segue destination="JJm-iH-gfM" kind="custom" identifier="moveToMainFromLaunch" customClass="SlideHorSegue" customModule="Urbaner_iOS" customModuleProvider="target" id="SDL-Tb-iVe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -116,7 +116,7 @@
         <!--Login View Controller-->
         <scene sceneID="Y6v-Sx-Xxi">
             <objects>
-                <viewController id="mXf-GA-6KQ" customClass="LoginViewController" customModule="Urbaner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mXf-GA-6KQ" customClass="LoginViewController" customModule="Urbaner_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iGl-gA-9du"/>
                         <viewControllerLayoutGuide type="bottom" id="8C5-dU-1RW"/>
@@ -141,13 +141,13 @@
                                     <color key="titleColor" red="0.89918722750000002" green="0.89918722750000002" blue="0.89918722750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Esx-1g-3vw" customClass="UrbanLabel" customModule="Urbaner" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Esx-1g-3vw" customClass="UrbanLabel" customModule="Urbaner_iOS" customModuleProvider="target">
                                 <rect key="frame" x="163" y="445" width="49" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.89918722750000002" green="0.89918722750000002" blue="0.89918722750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cq-OF-001" customClass="UrbanLabel" customModule="Urbaner" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOG IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cq-OF-001" customClass="UrbanLabel" customModule="Urbaner_iOS" customModuleProvider="target">
                                 <rect key="frame" x="110" y="143" width="154" height="58"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
                                 <color key="textColor" red="0.89918722750000002" green="0.89918722750000002" blue="0.89918722750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -173,7 +173,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQV-D0-QmJ" customClass="UrbanLabel" customModule="Urbaner" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQV-D0-QmJ" customClass="UrbanLabel" customModule="Urbaner_iOS" customModuleProvider="target">
                                 <rect key="frame" x="100" y="492" width="175" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.89918722750000002" green="0.89918722750000002" blue="0.89918722750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -246,8 +246,8 @@
                         <outlet property="forgetPasswordLabel" destination="xQV-D0-QmJ" id="MoO-RD-juT"/>
                         <outlet property="loginTitleLabel" destination="8cq-OF-001" id="LZl-zj-zvZ"/>
                         <outlet property="passwordTextField" destination="eKD-cz-Q1N" id="0Vk-Wj-8Bx"/>
-                        <segue destination="sZS-ll-GZI" kind="unwind" identifier="backToLaunchSegue" customClass="DismissSlideHorSegue" customModule="Urbaner" customModuleProvider="target" unwindAction="unwindToLaunchScreenWithSegue:" id="0aT-CN-fZ3"/>
-                        <segue destination="ayt-Pf-QHD" kind="custom" identifier="moveToMain" customClass="SlideHorSegue" customModule="Urbaner" customModuleProvider="target" id="wRU-ex-9WZ"/>
+                        <segue destination="sZS-ll-GZI" kind="unwind" identifier="backToLaunchSegue" customClass="DismissSlideHorSegue" customModule="Urbaner_iOS" customModuleProvider="target" unwindAction="unwindToLaunchScreenWithSegue:" id="0aT-CN-fZ3"/>
+                        <segue destination="JJm-iH-gfM" kind="custom" identifier="moveToMain" customClass="SlideHorSegue" customModule="Urbaner_iOS" customModuleProvider="target" id="R0J-eN-bnZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="spI-vz-Mh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,34 +255,113 @@
             </objects>
             <point key="canvasLocation" x="1004" y="-18"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Mod-Vr-3e0">
+        <!--News View Controller-->
+        <scene sceneID="QI5-Q1-Qnc">
             <objects>
-                <viewController id="ayt-Pf-QHD" sceneMemberID="viewController">
+                <viewController id="JXt-rN-EWW" customClass="NewsViewController" customModule="Urbaner_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6kA-PT-a3r"/>
-                        <viewControllerLayoutGuide type="bottom" id="KYC-Rl-Acw"/>
+                        <viewControllerLayoutGuide type="top" id="IV4-bz-2NY"/>
+                        <viewControllerLayoutGuide type="bottom" id="bcz-BS-OFf"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KoR-q7-Urm">
+                    <view key="view" contentMode="scaleToFill" id="scT-3g-okm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="" image="news" selectedImage="news_active" id="Xhl-YP-4zl">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tta-na-Ht1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3540" y="1657"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="DhQ-tE-aPG">
+            <objects>
+                <viewController id="VUv-WZ-FuW" customClass="HomeViewController" customModule="Urbaner_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="22a-Kn-oHY"/>
+                        <viewControllerLayoutGuide type="bottom" id="c0W-eY-5mR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aeD-Rl-rwL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_sample-no-status" translatesAutoresizingMaskIntoConstraints="NO" id="l6F-IA-yvo">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jtS-a8-Tos">
+                                <rect key="frame" x="67" y="245" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="l6F-IA-yvo" firstAttribute="top" secondItem="KoR-q7-Urm" secondAttribute="top" id="AGq-ED-bAP"/>
-                            <constraint firstItem="KYC-Rl-Acw" firstAttribute="top" secondItem="l6F-IA-yvo" secondAttribute="bottom" id="YME-zL-qas"/>
-                            <constraint firstItem="l6F-IA-yvo" firstAttribute="leading" secondItem="KoR-q7-Urm" secondAttribute="leading" id="tfO-uO-FUo"/>
-                            <constraint firstAttribute="trailing" secondItem="l6F-IA-yvo" secondAttribute="trailing" id="uxV-G6-lUd"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mIQ-7T-W6o"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="87K-jo-peb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LGa-Kv-RbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940" y="374.66266866566718"/>
+            <point key="canvasLocation" x="4479.1999999999998" y="-540.17991004497753"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8t1-vF-gbM">
+            <objects>
+                <tabBarController id="JJm-iH-gfM" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="k4I-ez-vjC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JFp-F2-Nli" kind="relationship" relationship="viewControllers" id="RFu-JR-zA9"/>
+                        <segue destination="JXt-rN-EWW" kind="relationship" relationship="viewControllers" id="hR5-f2-Gzv"/>
+                        <segue destination="rgX-xu-Jey" kind="relationship" relationship="viewControllers" id="AT1-gd-O4a"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dg2-ar-N7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2246" y="375"/>
+        </scene>
+        <!--Me View Controller-->
+        <scene sceneID="BtY-iM-coP">
+            <objects>
+                <viewController id="rgX-xu-Jey" customClass="MeViewController" customModule="Urbaner_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9i4-MR-hNA"/>
+                        <viewControllerLayoutGuide type="bottom" id="UXz-1K-cm8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s5Q-of-umt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="" image="me" selectedImage="me_active" id="9U5-OM-33q">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIc-cl-SND" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3540" y="561"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="vEn-gT-Q3W">
+            <objects>
+                <navigationController title="Explore" automaticallyAdjustsScrollViewInsets="NO" id="JFp-F2-Nli" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="home" selectedImage="home_active" id="IDw-XI-RLY">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IyP-Za-LVd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VUv-WZ-FuW" kind="relationship" relationship="rootViewController" id="yUX-kX-v64"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wtE-dx-9oc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3540" y="-540.17991004497753"/>
         </scene>
     </scenes>
     <resources>
@@ -290,12 +369,17 @@
         <image name="btn1" width="1376" height="192"/>
         <image name="btn2" width="1376" height="192"/>
         <image name="facebook_white" width="528" height="528"/>
+        <image name="home" width="23" height="22"/>
+        <image name="home_active" width="23" height="22"/>
         <image name="instagram_white" width="528" height="528"/>
-        <image name="main_sample-no-status" width="375" height="667"/>
+        <image name="me" width="20" height="24"/>
+        <image name="me_active" width="20" height="24"/>
+        <image name="news" width="24" height="24"/>
+        <image name="news_active" width="24" height="24"/>
         <image name="tf1" width="1376" height="192"/>
         <image name="twitter_white" width="528" height="528"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wRU-ex-9WZ"/>
+        <segue reference="R0J-eN-bnZ"/>
     </inferredMetricsTieBreakers>
 </document>

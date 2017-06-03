@@ -22,6 +22,9 @@
 		F9B4DFB71EC8C72A00C8F81F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B4DFB61EC8C72A00C8F81F /* LoginViewController.swift */; };
 		F9D6A1811ECA6AF200325282 /* SlideHorSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D6A1801ECA6AF200325282 /* SlideHorSegue.swift */; };
 		F9D6A1841ECA798F00325282 /* DismissSlideHorSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D6A1831ECA798F00325282 /* DismissSlideHorSegue.swift */; };
+		F9FE0D9F1EE2AD07001E0047 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE0D9E1EE2AD07001E0047 /* HomeViewController.swift */; };
+		F9FE0DA11EE2AD19001E0047 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE0DA01EE2AD19001E0047 /* NewsViewController.swift */; };
+		F9FE0DA31EE2AD26001E0047 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE0DA21EE2AD25001E0047 /* MeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		F9B4DFB61EC8C72A00C8F81F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F9D6A1801ECA6AF200325282 /* SlideHorSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideHorSegue.swift; sourceTree = "<group>"; };
 		F9D6A1831ECA798F00325282 /* DismissSlideHorSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissSlideHorSegue.swift; sourceTree = "<group>"; };
+		F9FE0D9E1EE2AD07001E0047 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F9FE0DA01EE2AD19001E0047 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		F9FE0DA21EE2AD25001E0047 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,9 @@
 				F9B4DFA91EC835C500C8F81F /* LaunchViewController.swift */,
 				F9B4DFB61EC8C72A00C8F81F /* LoginViewController.swift */,
 				F9D6A1821ECA6AF800325282 /* Util */,
+				F9FE0D9E1EE2AD07001E0047 /* HomeViewController.swift */,
+				F9FE0DA01EE2AD19001E0047 /* NewsViewController.swift */,
+				F9FE0DA21EE2AD25001E0047 /* MeViewController.swift */,
 			);
 			path = Urbaner;
 			sourceTree = "<group>";
@@ -480,12 +489,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9FE0DA31EE2AD26001E0047 /* MeViewController.swift in Sources */,
 				F9B4DFB71EC8C72A00C8F81F /* LoginViewController.swift in Sources */,
 				F9D6A1811ECA6AF200325282 /* SlideHorSegue.swift in Sources */,
 				F9D6A1841ECA798F00325282 /* DismissSlideHorSegue.swift in Sources */,
 				F9B4DFAA1EC835C500C8F81F /* LaunchViewController.swift in Sources */,
 				F9B4DF7A1EC8166900C8F81F /* AppDelegate.swift in Sources */,
+				F9FE0D9F1EE2AD07001E0047 /* HomeViewController.swift in Sources */,
 				F92571021ED5E3E1009340B5 /* UrbanLabel.swift in Sources */,
+				F9FE0DA11EE2AD19001E0047 /* NewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

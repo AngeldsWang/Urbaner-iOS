@@ -12,6 +12,8 @@ class UserItemListRow: UITableViewCell, UICollectionViewDataSource {
     
     var userItemBanners: [String: [UserItemBanner]] = [:]
     var currentUserID: String? = nil
+   
+    @IBOutlet weak var userItemListCollectionView: UICollectionView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

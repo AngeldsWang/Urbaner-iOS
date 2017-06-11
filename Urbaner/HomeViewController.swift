@@ -2,34 +2,89 @@
 //  HomeViewController.swift
 //  Urbaner-iOS
 //
-//  Created by wang-zhenjun on 2017/06/03.
+//  Created by wang-zhenjun on 2017/06/09.
 //  Copyright © 2017 angeldsphinx. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UITableViewController {
 
+    var categories = ["HOT RANKING", "WISHLIST"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-    */
+    
+    // MARK: - Table view data source
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return categories.count
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell: UITableViewCell?
 
+        if(indexPath.section == 0 && indexPath.row == 0){
+            cell = tableView.dequeueReusableCell(withIdentifier: "userAvatarRow") as! UserAvatarRow
+            
+            (cell as! UserAvatarRow).userAvatars = loadUserAvatars()
+        }
+        
+        if(indexPath.section == 1 && indexPath.row == 0){
+            cell = tableView.dequeueReusableCell(withIdentifier: "userItemListRow") as! UserItemListRow
+            
+            (cell as! UserItemListRow).userItemBanners = loadUserItemBanners()!
+            (cell as! UserItemListRow).currentUserID = "user1"
+        }
+
+        
+        return cell!
+    }
+    
+    
+    fileprivate func loadUserAvatars() -> [UserAvatar] {
+        
+        var users = [UserAvatar]()
+        let inputFile = Bundle.main.path(forResource: "users", ofType: "plist")
+        
+        let inputDataArray = NSArray(contentsOfFile: inputFile!)
+        
+        for inputItem in inputDataArray as! [Dictionary<String, String>] {
+            let userAvatar = UserAvatar(dataDictionary: inputItem)
+            users.append(userAvatar)
+        }
+        
+        return users
+    }
+    
+    fileprivate func loadUserItemBanners() -> [String: [UserItemBanner]]? {
+        
+        var userItemBanners = [String: [UserItemBanner]]()
+
+        let inputFile = Bundle.main.path(forResource: "userItemBanners", ofType: "plist")
+        
+        let inputDataDict = NSDictionary(contentsOfFile: inputFile!)
+        
+        for (userID, bannerURLs) in inputDataDict! {
+            var itemBanners = [UserItemBanner]()
+
+            for bannerURL in (bannerURLs as! [String]) {
+                let userItemBanner = UserItemBanner(userID as! String, bannerURL)
+                itemBanners.append(userItemBanner)
+            }
+            
+            userItemBanners[userID as! String] = itemBanners
+        }
+        
+        return userItemBanners
+    }
 }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>userName</key>
+		<string>Jessica Gonzales</string>
+		<key>userAvatarURL</key>
+		<string>user1</string>
+	</dict>
+	<dict>
+		<key>userName</key>
+		<string>Martha Fowler</string>
+		<key>userAvatarURL</key>
+		<string>user2</string>
+	</dict>
+	<dict>
+		<key>userName</key>
+		<string>Eugene Barnes</string>
+		<key>userAvatarURL</key>
+		<string>user3</string>
+	</dict>
+	<dict>
+		<key>userName</key>
+		<string>Shirley Curtis</string>
+		<key>userAvatarURL</key>
+		<string>user4</string>
+	</dict>
+	<dict>
+		<key>userName</key>
+		<string>Rose James</string>
+		<key>userAvatarURL</key>
+		<string>user5</string>
+	</dict>
+	<dict>
+		<key>userName</key>
+		<string>Russell Cunningham</string>
+		<key>userAvatarURL</key>
+		<string>user6</string>
+	</dict>
+	<dict>
+		<key>userName</key>
+		<string>Joshua Ross</string>
+		<key>userAvatarURL</key>
+		<string>user7</string>
+	</dict>
+	<dict>
+		<key>userName</key>
+		<string>Roger Brewer</string>
+		<key>userAvatarURL</key>
+		<string>user8</string>
+	</dict>
+	<dict>
+		<key>userName</key>
+		<string>Nicholas Fernandez</string>
+		<key>userAvatarURL</key>
+		<string>user9</string>
+	</dict>
+</array>
+</plist>

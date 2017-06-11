@@ -10,8 +10,10 @@
 		3506FF19F526B972E852C9CF /* Pods_Urbaner_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506D8940C8CD3AB8C3FB3DA8 /* Pods_Urbaner_iOSTests.framework */; };
 		B47C4FEB944B4EB1D6517E10 /* Pods_Urbaner_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B1F4757629EEFA6C20FCBE /* Pods_Urbaner_iOSUITests.framework */; };
 		E7177C5BA5D4D377F00C5684 /* Pods_Urbaner_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC9DB79329365E785BD9DA5 /* Pods_Urbaner_iOS.framework */; };
-		F911F4E21ED92EED00FCB6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F911F4E11ED92EED00FCB6D7 /* Assets.xcassets */; };
+		F9077B511EE9A7CF0069EBE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9077B501EE9A7CF0069EBE8 /* HomeViewController.swift */; };
+		F9077B531EE9A83B0069EBE8 /* UserAvatarRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9077B521EE9A83B0069EBE8 /* UserAvatarRow.swift */; };
 		F92571021ED5E3E1009340B5 /* UrbanLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92571011ED5E3E1009340B5 /* UrbanLabel.swift */; };
+		F956BFE71EE8644D00406A21 /* UserItemListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F956BFE61EE8644D00406A21 /* UserItemListRow.swift */; };
 		F9B4DF7A1EC8166900C8F81F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B4DF791EC8166900C8F81F /* AppDelegate.swift */; };
 		F9B4DF841EC8166900C8F81F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B4DF821EC8166900C8F81F /* Main.storyboard */; };
 		F9B4DF8F1EC8166900C8F81F /* UrbanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B4DF8E1EC8166900C8F81F /* UrbanerTests.swift */; };
@@ -20,10 +22,16 @@
 		F9B4DFAA1EC835C500C8F81F /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B4DFA91EC835C500C8F81F /* LaunchViewController.swift */; };
 		F9B4DFB51EC8C09E00C8F81F /* Spring in Resources */ = {isa = PBXBuildFile; fileRef = F9B4DFB41EC8C09E00C8F81F /* Spring */; };
 		F9B4DFB71EC8C72A00C8F81F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B4DFB61EC8C72A00C8F81F /* LoginViewController.swift */; };
+		F9B78D8B1EEB098E0081B959 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B78D8A1EEB098E0081B959 /* NewsViewController.swift */; };
+		F9B78D911EED019E0081B959 /* UserAvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B78D901EED019E0081B959 /* UserAvatarCell.swift */; };
+		F9B78D931EED07180081B959 /* users.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9B78D921EED07180081B959 /* users.plist */; };
+		F9B78D971EED0E140081B959 /* UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B78D961EED0E140081B959 /* UserAvatar.swift */; };
+		F9B78D991EED23200081B959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B78D981EED23200081B959 /* Assets.xcassets */; };
+		F9B78D9B1EED34290081B959 /* userItemBanners.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9B78D9A1EED34290081B959 /* userItemBanners.plist */; };
+		F9B78D9F1EED36270081B959 /* UserItemBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B78D9E1EED36270081B959 /* UserItemBanner.swift */; };
+		F9B78DA11EED38410081B959 /* UserItemBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B78DA01EED38410081B959 /* UserItemBannerCell.swift */; };
 		F9D6A1811ECA6AF200325282 /* SlideHorSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D6A1801ECA6AF200325282 /* SlideHorSegue.swift */; };
 		F9D6A1841ECA798F00325282 /* DismissSlideHorSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D6A1831ECA798F00325282 /* DismissSlideHorSegue.swift */; };
-		F9FE0D9F1EE2AD07001E0047 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE0D9E1EE2AD07001E0047 /* HomeViewController.swift */; };
-		F9FE0DA11EE2AD19001E0047 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE0DA01EE2AD19001E0047 /* NewsViewController.swift */; };
 		F9FE0DA31EE2AD26001E0047 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE0DA21EE2AD25001E0047 /* MeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,9 +62,11 @@
 		D351C19766F4D7BDD2A6291D /* Pods-Urbaner-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOSUITests/Pods-Urbaner-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E05E7F2B46ED50C7A32FECC5 /* Pods-Urbaner-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOS/Pods-Urbaner-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		EB408E5C94A4EFFC5FA8F8BC /* Pods-Urbaner-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Urbaner-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Urbaner-iOSTests/Pods-Urbaner-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9077B501EE9A7CF0069EBE8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F9077B521EE9A83B0069EBE8 /* UserAvatarRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAvatarRow.swift; sourceTree = "<group>"; };
 		F911F4E01ED9114600FCB6D7 /* Urbaner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Urbaner.entitlements; sourceTree = "<group>"; };
-		F911F4E11ED92EED00FCB6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F92571011ED5E3E1009340B5 /* UrbanLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrbanLabel.swift; sourceTree = "<group>"; };
+		F956BFE61EE8644D00406A21 /* UserItemListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserItemListRow.swift; sourceTree = "<group>"; };
 		F9B4DF761EC8166900C8F81F /* Urbaner-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Urbaner-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B4DF791EC8166900C8F81F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9B4DF831EC8166900C8F81F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,10 +81,16 @@
 		F9B4DFA91EC835C500C8F81F /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		F9B4DFB41EC8C09E00C8F81F /* Spring */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Spring; sourceTree = "<group>"; };
 		F9B4DFB61EC8C72A00C8F81F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F9B78D8A1EEB098E0081B959 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		F9B78D901EED019E0081B959 /* UserAvatarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAvatarCell.swift; sourceTree = "<group>"; };
+		F9B78D921EED07180081B959 /* users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = users.plist; sourceTree = "<group>"; };
+		F9B78D961EED0E140081B959 /* UserAvatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAvatar.swift; sourceTree = "<group>"; };
+		F9B78D981EED23200081B959 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9B78D9A1EED34290081B959 /* userItemBanners.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = userItemBanners.plist; sourceTree = "<group>"; };
+		F9B78D9E1EED36270081B959 /* UserItemBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserItemBanner.swift; sourceTree = "<group>"; };
+		F9B78DA01EED38410081B959 /* UserItemBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserItemBannerCell.swift; sourceTree = "<group>"; };
 		F9D6A1801ECA6AF200325282 /* SlideHorSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideHorSegue.swift; sourceTree = "<group>"; };
 		F9D6A1831ECA798F00325282 /* DismissSlideHorSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissSlideHorSegue.swift; sourceTree = "<group>"; };
-		F9FE0D9E1EE2AD07001E0047 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		F9FE0DA01EE2AD19001E0047 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		F9FE0DA21EE2AD25001E0047 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,7 +170,7 @@
 		F9B4DF781EC8166900C8F81F /* Urbaner */ = {
 			isa = PBXGroup;
 			children = (
-				F911F4E11ED92EED00FCB6D7 /* Assets.xcassets */,
+				F9B78D981EED23200081B959 /* Assets.xcassets */,
 				F911F4E01ED9114600FCB6D7 /* Urbaner.entitlements */,
 				F9B4DFB41EC8C09E00C8F81F /* Spring */,
 				F9B4DFA71EC8259300C8F81F /* test1.mp4 */,
@@ -164,9 +180,11 @@
 				F9B4DFA91EC835C500C8F81F /* LaunchViewController.swift */,
 				F9B4DFB61EC8C72A00C8F81F /* LoginViewController.swift */,
 				F9D6A1821ECA6AF800325282 /* Util */,
-				F9FE0D9E1EE2AD07001E0047 /* HomeViewController.swift */,
-				F9FE0DA01EE2AD19001E0047 /* NewsViewController.swift */,
+				F9B78D8A1EEB098E0081B959 /* NewsViewController.swift */,
 				F9FE0DA21EE2AD25001E0047 /* MeViewController.swift */,
+				F9B78DA21EED45B30081B959 /* Home */,
+				F9B78D951EED0DD40081B959 /* Model */,
+				F9B78D941EED0DC50081B959 /* Data */,
 			);
 			path = Urbaner;
 			sourceTree = "<group>";
@@ -187,6 +205,60 @@
 				F9B4DF9B1EC8166A00C8F81F /* Info.plist */,
 			);
 			path = UrbanerUITests;
+			sourceTree = "<group>";
+		};
+		F9B78D941EED0DC50081B959 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F9B78D921EED07180081B959 /* users.plist */,
+				F9B78D9A1EED34290081B959 /* userItemBanners.plist */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		F9B78D951EED0DD40081B959 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9B78D961EED0E140081B959 /* UserAvatar.swift */,
+				F9B78D9E1EED36270081B959 /* UserItemBanner.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F9B78DA21EED45B30081B959 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F9B78DA51EED460F0081B959 /* CollectionCell */,
+				F9B78DA41EED45DD0081B959 /* TableRow */,
+				F9B78DA31EED45BA0081B959 /* ViewController */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		F9B78DA31EED45BA0081B959 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F9077B501EE9A7CF0069EBE8 /* HomeViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		F9B78DA41EED45DD0081B959 /* TableRow */ = {
+			isa = PBXGroup;
+			children = (
+				F9077B521EE9A83B0069EBE8 /* UserAvatarRow.swift */,
+				F956BFE61EE8644D00406A21 /* UserItemListRow.swift */,
+			);
+			name = TableRow;
+			sourceTree = "<group>";
+		};
+		F9B78DA51EED460F0081B959 /* CollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				F9B78D901EED019E0081B959 /* UserAvatarCell.swift */,
+				F9B78DA01EED38410081B959 /* UserItemBannerCell.swift */,
+			);
+			name = CollectionCell;
 			sourceTree = "<group>";
 		};
 		F9D6A1821ECA6AF800325282 /* Util */ = {
@@ -324,9 +396,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9B4DF841EC8166900C8F81F /* Main.storyboard in Resources */,
+				F9B78D931EED07180081B959 /* users.plist in Resources */,
+				F9B78D9B1EED34290081B959 /* userItemBanners.plist in Resources */,
 				F9B4DFB51EC8C09E00C8F81F /* Spring in Resources */,
-				F911F4E21ED92EED00FCB6D7 /* Assets.xcassets in Resources */,
 				F9B4DFA81EC8259300C8F81F /* test1.mp4 in Resources */,
+				F9B78D991EED23200081B959 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,15 +563,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9B78D911EED019E0081B959 /* UserAvatarCell.swift in Sources */,
+				F956BFE71EE8644D00406A21 /* UserItemListRow.swift in Sources */,
 				F9FE0DA31EE2AD26001E0047 /* MeViewController.swift in Sources */,
 				F9B4DFB71EC8C72A00C8F81F /* LoginViewController.swift in Sources */,
 				F9D6A1811ECA6AF200325282 /* SlideHorSegue.swift in Sources */,
 				F9D6A1841ECA798F00325282 /* DismissSlideHorSegue.swift in Sources */,
 				F9B4DFAA1EC835C500C8F81F /* LaunchViewController.swift in Sources */,
+				F9B78D971EED0E140081B959 /* UserAvatar.swift in Sources */,
 				F9B4DF7A1EC8166900C8F81F /* AppDelegate.swift in Sources */,
-				F9FE0D9F1EE2AD07001E0047 /* HomeViewController.swift in Sources */,
+				F9B78D9F1EED36270081B959 /* UserItemBanner.swift in Sources */,
 				F92571021ED5E3E1009340B5 /* UrbanLabel.swift in Sources */,
-				F9FE0DA11EE2AD19001E0047 /* NewsViewController.swift in Sources */,
+				F9077B511EE9A7CF0069EBE8 /* HomeViewController.swift in Sources */,
+				F9B78D8B1EEB098E0081B959 /* NewsViewController.swift in Sources */,
+				F9077B531EE9A83B0069EBE8 /* UserAvatarRow.swift in Sources */,
+				F9B78DA11EED38410081B959 /* UserItemBannerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

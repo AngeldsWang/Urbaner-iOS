@@ -8,10 +8,18 @@
 
 import UIKit
 
+protocol UserAvatarCellEventDelegate {
+    func currentUserAvatarChanged(userAvatar: UserAvatar)
+}
+
 class UserAvatarCell: UICollectionViewCell {
     
     @IBOutlet weak var userAvatarImageView: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
+    
+    private weak var currentUserAvatar: UserAvatar!
+    
+    var eventDelegate: UserAvatarCellEventDelegate?
    
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,6 +33,7 @@ class UserAvatarCell: UICollectionViewCell {
     func setUserAvatar(_ userAvatar: UserAvatar) {
         userAvatarImageView.image = UIImage(named: userAvatar.userAvatarURL)
         userNameLabel.text = userAvatar.userName
+        currentUserAvatar = userAvatar
     }
     
     func setLayout() {
@@ -35,4 +44,10 @@ class UserAvatarCell: UICollectionViewCell {
         userAvatarImageView.layer.borderColor = UIColor.white.cgColor
     }
 
+    @IBAction func userAvatarBtnClicked(_ sender: UIButton) {
+        
+        if let del = eventDelegate {
+            del.currentUserAvatarChanged(userAvatar: currentUserAvatar)
+        }
+    }
 }

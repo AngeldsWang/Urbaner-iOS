@@ -8,9 +8,11 @@
 
 import UIKit
 
-class HomeViewController: UITableViewController {
+class HomeViewController: UITableViewController, UserAvatarRowEventDelegate {
 
     var categories = ["HOT RANKING", "WISHLIST"]
+    
+    var userItemListRow: UserItemListRow?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +39,7 @@ class HomeViewController: UITableViewController {
             cell = tableView.dequeueReusableCell(withIdentifier: "userAvatarRow") as! UserAvatarRow
             
             (cell as! UserAvatarRow).userAvatars = loadUserAvatars()
+            (cell as! UserAvatarRow).eventDelegate = self
         }
         
         if(indexPath.section == 1 && indexPath.row == 0){
@@ -44,6 +47,8 @@ class HomeViewController: UITableViewController {
             
             (cell as! UserItemListRow).userItemBanners = loadUserItemBanners()!
             (cell as! UserItemListRow).currentUserID = "user1"
+            
+            userItemListRow = cell as? UserItemListRow
         }
 
         
@@ -86,5 +91,13 @@ class HomeViewController: UITableViewController {
         }
         
         return userItemBanners
+    }
+    
+    func currentActiveUserAvatar(userAvatar: UserAvatar) {
+        print("IN HOME VIEW CONTROLLER !!!")
+        
+        userItemListRow?.currentUserID = userAvatar.userAvatarURL
+        print(userItemListRow?.currentUserID ?? "")
+        self.tableView.reloadSections(IndexSet(integer: 1), with: .fade)
     }
 }

@@ -8,9 +8,15 @@
 
 import UIKit
 
-class UserAvatarRow: UITableViewCell, UICollectionViewDataSource {
+protocol UserAvatarRowEventDelegate {
+    func currentActiveUserAvatar(userAvatar: UserAvatar)
+}
+
+class UserAvatarRow: UITableViewCell, UICollectionViewDataSource, UserAvatarCellEventDelegate {
     
     var userAvatars: [UserAvatar] = []
+    
+    var eventDelegate: UserAvatarRowEventDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,6 +39,15 @@ class UserAvatarRow: UITableViewCell, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "userAvatarCell", for: indexPath) as! UserAvatarCell
         cell.setUserAvatar(userAvatars[indexPath.row])
         cell.setLayout()
+        cell.eventDelegate = self
         return cell
+    }
+    
+    func currentUserAvatarChanged(userAvatar: UserAvatar) {
+        print("IN TABLE CELL !!!")
+        print(userAvatar.userAvatarURL)
+        if let del = eventDelegate {
+            del.currentActiveUserAvatar(userAvatar: userAvatar)
+        }
     }
 }

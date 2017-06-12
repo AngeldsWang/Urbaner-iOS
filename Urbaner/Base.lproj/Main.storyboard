@@ -318,12 +318,12 @@
         <scene sceneID="O5P-cB-dP1">
             <objects>
                 <tableViewController id="MNK-Ke-8Qg" customClass="HomeViewController" customModule="Urbaner_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="kE5-vN-UcS">
+                    <tableView key="view" clipsSubviews="YES" tag="10" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="kE5-vN-UcS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userAvatarRow" rowHeight="100" id="qfL-Ja-2aD" customClass="UserAvatarRow" customModule="Urbaner_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userAvatarRow" rowHeight="100" id="qfL-Ja-2aD" customClass="UserAvatarRow" customModule="Urbaner_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qfL-Ja-2aD" id="qYQ-8x-n47">
@@ -363,13 +363,23 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IM4-v9-8Lt">
+                                                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                                <connections>
+                                                                    <action selector="userAvatarBtnClicked:" destination="EFs-3T-Eut" eventType="touchUpInside" id="PJU-Xd-xVz"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                     </view>
                                                     <constraints>
                                                         <constraint firstItem="W8N-3C-bse" firstAttribute="top" secondItem="sNl-UD-BQY" secondAttribute="bottom" id="0UJ-Fn-SBc"/>
+                                                        <constraint firstAttribute="trailing" secondItem="IM4-v9-8Lt" secondAttribute="trailing" id="1eP-j3-YzH"/>
                                                         <constraint firstItem="sNl-UD-BQY" firstAttribute="leading" secondItem="EFs-3T-Eut" secondAttribute="leading" id="Ehc-0E-tnD"/>
+                                                        <constraint firstItem="IM4-v9-8Lt" firstAttribute="top" secondItem="EFs-3T-Eut" secondAttribute="top" id="Fa4-pl-a93"/>
                                                         <constraint firstAttribute="trailing" secondItem="W8N-3C-bse" secondAttribute="trailing" id="IxF-a3-38X"/>
                                                         <constraint firstAttribute="bottom" secondItem="W8N-3C-bse" secondAttribute="bottom" id="MBS-Cb-qkR"/>
+                                                        <constraint firstItem="W8N-3C-bse" firstAttribute="top" secondItem="IM4-v9-8Lt" secondAttribute="bottom" id="Pg4-Jt-Ef0"/>
+                                                        <constraint firstItem="IM4-v9-8Lt" firstAttribute="leading" secondItem="EFs-3T-Eut" secondAttribute="leading" id="c0l-ur-pE0"/>
                                                         <constraint firstItem="sNl-UD-BQY" firstAttribute="top" secondItem="EFs-3T-Eut" secondAttribute="top" id="mlJ-d9-Cqg"/>
                                                         <constraint firstAttribute="bottom" secondItem="sNl-UD-BQY" secondAttribute="bottom" constant="26" id="tL9-1P-q5M"/>
                                                         <constraint firstItem="W8N-3C-bse" firstAttribute="leading" secondItem="EFs-3T-Eut" secondAttribute="leading" id="yNa-Ii-tcP"/>
@@ -397,7 +407,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.96812892464604206" green="0.98061276080742465" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userItemListRow" rowHeight="110" id="0EB-Er-E7R" customClass="UserItemListRow" customModule="Urbaner_iOS" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" tag="101" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userItemListRow" rowHeight="110" id="0EB-Er-E7R" customClass="UserItemListRow" customModule="Urbaner_iOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="128" width="375" height="110"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0EB-Er-E7R" id="cAn-GV-O5j">

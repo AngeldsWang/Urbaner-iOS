@@ -95,7 +95,6 @@ class HomeViewController: UITableViewController, UserAvatarRowEventDelegate {
     
     func currentActiveUserAvatar(userAvatar: UserAvatar) {        
         userItemListRow?.currentUserID = userAvatar.userAvatarURL
-        print(userItemListRow?.currentUserID ?? "")
         userItemListRow?.userItemListCollectionView.reloadSections(IndexSet(integer: 0))
     }
 }

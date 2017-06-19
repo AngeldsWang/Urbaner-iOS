@@ -29,7 +29,7 @@ class UserItemListRow: UITableViewCell, UICollectionViewDataSource {
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return userItemBanners[currentUserID!]!.count
+        return userItemBanners[currentUserID!]?.count ?? 0
     }
     
     

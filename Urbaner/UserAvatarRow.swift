@@ -44,8 +44,6 @@ class UserAvatarRow: UITableViewCell, UICollectionViewDataSource, UserAvatarCell
     }
     
     func currentUserAvatarChanged(userAvatar: UserAvatar) {
-        print("IN TABLE CELL !!!")
-        print(userAvatar.userAvatarURL)
         if let del = eventDelegate {
             del.currentActiveUserAvatar(userAvatar: userAvatar)
         }

@@ -45,7 +45,6 @@ class UserAvatarCell: UICollectionViewCell {
     }
 
     @IBAction func userAvatarBtnClicked(_ sender: UIButton) {
-        
         if let del = eventDelegate {
             del.currentUserAvatarChanged(userAvatar: currentUserAvatar)
         }

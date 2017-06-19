@@ -93,11 +93,9 @@ class HomeViewController: UITableViewController, UserAvatarRowEventDelegate {
         return userItemBanners
     }
     
-    func currentActiveUserAvatar(userAvatar: UserAvatar) {
-        print("IN HOME VIEW CONTROLLER !!!")
-        
+    func currentActiveUserAvatar(userAvatar: UserAvatar) {        
         userItemListRow?.currentUserID = userAvatar.userAvatarURL
         print(userItemListRow?.currentUserID ?? "")
-        self.tableView.reloadSections(IndexSet(integer: 1), with: .fade)
+        userItemListRow?.userItemListCollectionView.reloadSections(IndexSet(integer: 0))
     }
 }

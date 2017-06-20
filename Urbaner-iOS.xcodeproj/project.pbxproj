@@ -13,6 +13,10 @@
 		F9077B511EE9A7CF0069EBE8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9077B501EE9A7CF0069EBE8 /* HomeViewController.swift */; };
 		F9077B531EE9A83B0069EBE8 /* UserAvatarRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9077B521EE9A83B0069EBE8 /* UserAvatarRow.swift */; };
 		F92571021ED5E3E1009340B5 /* UrbanLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92571011ED5E3E1009340B5 /* UrbanLabel.swift */; };
+		F92B079E1EF972D500469FCA /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B079D1EF972D500469FCA /* CategoryRow.swift */; };
+		F92B07A01EF9736E00469FCA /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B079F1EF9736E00469FCA /* CategoryCell.swift */; };
+		F92B07A21EF9768C00469FCA /* CategoryBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B07A11EF9768C00469FCA /* CategoryBanner.swift */; };
+		F92B07A41EF977A100469FCA /* categoryBanners.plist in Resources */ = {isa = PBXBuildFile; fileRef = F92B07A31EF977A100469FCA /* categoryBanners.plist */; };
 		F956BFE71EE8644D00406A21 /* UserItemListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F956BFE61EE8644D00406A21 /* UserItemListRow.swift */; };
 		F9B4DF7A1EC8166900C8F81F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B4DF791EC8166900C8F81F /* AppDelegate.swift */; };
 		F9B4DF841EC8166900C8F81F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B4DF821EC8166900C8F81F /* Main.storyboard */; };
@@ -66,6 +70,10 @@
 		F9077B521EE9A83B0069EBE8 /* UserAvatarRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAvatarRow.swift; sourceTree = "<group>"; };
 		F911F4E01ED9114600FCB6D7 /* Urbaner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Urbaner.entitlements; sourceTree = "<group>"; };
 		F92571011ED5E3E1009340B5 /* UrbanLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrbanLabel.swift; sourceTree = "<group>"; };
+		F92B079D1EF972D500469FCA /* CategoryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		F92B079F1EF9736E00469FCA /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		F92B07A11EF9768C00469FCA /* CategoryBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryBanner.swift; sourceTree = "<group>"; };
+		F92B07A31EF977A100469FCA /* categoryBanners.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categoryBanners.plist; sourceTree = "<group>"; };
 		F956BFE61EE8644D00406A21 /* UserItemListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserItemListRow.swift; sourceTree = "<group>"; };
 		F9B4DF761EC8166900C8F81F /* Urbaner-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Urbaner-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B4DF791EC8166900C8F81F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -212,6 +220,7 @@
 			children = (
 				F9B78D921EED07180081B959 /* users.plist */,
 				F9B78D9A1EED34290081B959 /* userItemBanners.plist */,
+				F92B07A31EF977A100469FCA /* categoryBanners.plist */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -221,6 +230,7 @@
 			children = (
 				F9B78D961EED0E140081B959 /* UserAvatar.swift */,
 				F9B78D9E1EED36270081B959 /* UserItemBanner.swift */,
+				F92B07A11EF9768C00469FCA /* CategoryBanner.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -248,6 +258,7 @@
 			children = (
 				F9077B521EE9A83B0069EBE8 /* UserAvatarRow.swift */,
 				F956BFE61EE8644D00406A21 /* UserItemListRow.swift */,
+				F92B079D1EF972D500469FCA /* CategoryRow.swift */,
 			);
 			name = TableRow;
 			sourceTree = "<group>";
@@ -257,6 +268,7 @@
 			children = (
 				F9B78D901EED019E0081B959 /* UserAvatarCell.swift */,
 				F9B78DA01EED38410081B959 /* UserItemBannerCell.swift */,
+				F92B079F1EF9736E00469FCA /* CategoryCell.swift */,
 			);
 			name = CollectionCell;
 			sourceTree = "<group>";
@@ -399,6 +411,7 @@
 				F9B78D931EED07180081B959 /* users.plist in Resources */,
 				F9B78D9B1EED34290081B959 /* userItemBanners.plist in Resources */,
 				F9B4DFB51EC8C09E00C8F81F /* Spring in Resources */,
+				F92B07A41EF977A100469FCA /* categoryBanners.plist in Resources */,
 				F9B4DFA81EC8259300C8F81F /* test1.mp4 in Resources */,
 				F9B78D991EED23200081B959 /* Assets.xcassets in Resources */,
 			);
@@ -563,8 +576,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92B07A01EF9736E00469FCA /* CategoryCell.swift in Sources */,
 				F9B78D911EED019E0081B959 /* UserAvatarCell.swift in Sources */,
 				F956BFE71EE8644D00406A21 /* UserItemListRow.swift in Sources */,
+				F92B079E1EF972D500469FCA /* CategoryRow.swift in Sources */,
 				F9FE0DA31EE2AD26001E0047 /* MeViewController.swift in Sources */,
 				F9B4DFB71EC8C72A00C8F81F /* LoginViewController.swift in Sources */,
 				F9D6A1811ECA6AF200325282 /* SlideHorSegue.swift in Sources */,
@@ -574,6 +589,7 @@
 				F9B4DF7A1EC8166900C8F81F /* AppDelegate.swift in Sources */,
 				F9B78D9F1EED36270081B959 /* UserItemBanner.swift in Sources */,
 				F92571021ED5E3E1009340B5 /* UrbanLabel.swift in Sources */,
+				F92B07A21EF9768C00469FCA /* CategoryBanner.swift in Sources */,
 				F9077B511EE9A7CF0069EBE8 /* HomeViewController.swift in Sources */,
 				F9B78D8B1EEB098E0081B959 /* NewsViewController.swift in Sources */,
 				F9077B531EE9A83B0069EBE8 /* UserAvatarRow.swift in Sources */,

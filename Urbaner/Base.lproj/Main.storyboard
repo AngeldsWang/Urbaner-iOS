@@ -464,6 +464,60 @@
                                     <outlet property="userItemListCollectionView" destination="Yfy-cz-HtJ" id="Acc-rU-Mk4"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryRow" rowHeight="260" id="C7v-k8-hMP" customClass="CategoryRow" customModule="Urbaner_iOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="238" width="375" height="260"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C7v-k8-hMP" id="D3N-0i-CZt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="i0R-oH-SXX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="7" id="mWw-SF-TOK">
+                                                <size key="itemSize" width="115" height="178"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="7" minY="10" maxX="7" maxY="10"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryCell" id="xAF-Yz-Fkl" customClass="CategoryCell" customModule="Urbaner_iOS" customModuleProvider="target">
+                                                    <rect key="frame" x="7" y="41" width="115" height="178"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                        <rect key="frame" x="0.0" y="0.0" width="115" height="178"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xhN-8F-Zf4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="115" height="178"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="xhN-8F-Zf4" secondAttribute="trailing" id="22C-zM-cL4"/>
+                                                        <constraint firstItem="xhN-8F-Zf4" firstAttribute="leading" secondItem="xAF-Yz-Fkl" secondAttribute="leading" id="MF8-AG-Hd1"/>
+                                                        <constraint firstItem="xhN-8F-Zf4" firstAttribute="top" secondItem="xAF-Yz-Fkl" secondAttribute="top" id="NLw-Tr-GPg"/>
+                                                        <constraint firstAttribute="bottom" secondItem="xhN-8F-Zf4" secondAttribute="bottom" id="eZ4-UF-KtN"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="categoryImageView" destination="xhN-8F-Zf4" id="nHn-ge-HYd"/>
+                                                    </connections>
+                                                </collectionViewCell>
+                                            </cells>
+                                            <connections>
+                                                <outlet property="dataSource" destination="C7v-k8-hMP" id="8Eu-Ze-fMO"/>
+                                                <outlet property="delegate" destination="C7v-k8-hMP" id="BNf-Bm-1jm"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="i0R-oH-SXX" firstAttribute="leading" secondItem="D3N-0i-CZt" secondAttribute="leading" id="0cm-RS-O5i"/>
+                                        <constraint firstAttribute="trailing" secondItem="i0R-oH-SXX" secondAttribute="trailing" id="3cc-R4-38C"/>
+                                        <constraint firstItem="i0R-oH-SXX" firstAttribute="top" secondItem="D3N-0i-CZt" secondAttribute="top" id="7Jb-2p-3Bs"/>
+                                        <constraint firstAttribute="bottom" secondItem="i0R-oH-SXX" secondAttribute="bottom" id="Prf-GL-jPG"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="MNK-Ke-8Qg" id="yc9-Vp-TUN"/>
@@ -479,7 +533,6 @@
         <!--Me-->
         <scene sceneID="Kpo-PY-KwR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="82c-X1-w9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController title="Me" automaticallyAdjustsScrollViewInsets="NO" id="TcD-Jq-06M" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="2" title="" image="me" selectedImage="me_active" id="9U5-OM-33q">
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
@@ -494,6 +547,7 @@
                         <segue destination="rgX-xu-Jey" kind="relationship" relationship="rootViewController" id="Q9L-HB-xhT"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82c-X1-w9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3135" y="1263"/>
         </scene>

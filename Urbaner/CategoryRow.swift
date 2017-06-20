@@ -9,6 +9,8 @@
 import UIKit
 
 class CategoryRow: UITableViewCell {
+    
+    var categoryBanners: [CategoryBanner] = []
 
     override func awakeFromNib() {
         super.awakeFromNib()

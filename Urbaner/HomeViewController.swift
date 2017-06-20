@@ -50,6 +50,12 @@ class HomeViewController: UITableViewController, UserAvatarRowEventDelegate {
             
             userItemListRow = cell as? UserItemListRow
         }
+        
+        if(indexPath.section == 2 && indexPath.row == 0){
+            cell = tableView.dequeueReusableCell(withIdentifier: "categoryRow") as! CategoryRow
+            
+            (cell as! CategoryRow).categoryBanners = loadCategoryBanners()
+        }
 
         
         return cell!
@@ -93,19 +99,20 @@ class HomeViewController: UITableViewController, UserAvatarRowEventDelegate {
         return userItemBanners
     }
     
-    fileprivate func loadCategoryBanners() -> [String: String] {
+    fileprivate func loadCategoryBanners() -> [CategoryBanner] {
         
-        var categoryByURL = [String: String]()
+        var categoryBanners = [CategoryBanner]()
         
         let inputFile = Bundle.main.path(forResource: "categoryBanners", ofType: "plist")
         
         let inputDataDict = NSDictionary(contentsOfFile: inputFile!)
         
         for (category, bannerURL) in inputDataDict as! Dictionary<String, String> {
-            categoryByURL[bannerURL] = category
+            let categoryBanner = CategoryBanner(category, bannerURL)
+            categoryBanners.append(categoryBanner)
         }
         
-        return categoryByURL
+        return categoryBanners
     }
     
     func currentActiveUserAvatar(userAvatar: UserAvatar) {        

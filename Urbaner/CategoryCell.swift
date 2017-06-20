@@ -21,8 +21,8 @@ class CategoryCell: UICollectionViewCell {
         super.init(coder: aDecoder)
     }
     
-    func setUserItemBanner(_ userItemBanner: UserItemBanner) {
-        categoryImageView.image = UIImage(named: userItemBanner.userItemBannerURL)
+    func setCategoryBanner(_ categoryBanner: CategoryBanner) {
+        categoryImageView.image = UIImage(named: categoryBanner.categoryBannerURL)
     }
     
     func setLayout() {

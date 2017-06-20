@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CategoryRow: UITableViewCell {
+class CategoryRow: UITableViewCell, UICollectionViewDataSource {
     
     var categoryBanners: [CategoryBanner] = []
 
@@ -22,5 +22,16 @@ class CategoryRow: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return categoryBanners.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoryCell", for: indexPath) as! CategoryCell
+        cell.setCategoryBanner(categoryBanners[indexPath.row])
+        cell.setLayout()
+        return cell
+    }
 }

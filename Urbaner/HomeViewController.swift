@@ -93,6 +93,21 @@ class HomeViewController: UITableViewController, UserAvatarRowEventDelegate {
         return userItemBanners
     }
     
+    fileprivate func loadCategoryBanners() -> [String: String] {
+        
+        var categoryByURL = [String: String]()
+        
+        let inputFile = Bundle.main.path(forResource: "categoryBanners", ofType: "plist")
+        
+        let inputDataDict = NSDictionary(contentsOfFile: inputFile!)
+        
+        for (category, bannerURL) in inputDataDict as! Dictionary<String, String> {
+            categoryByURL[bannerURL] = category
+        }
+        
+        return categoryByURL
+    }
+    
     func currentActiveUserAvatar(userAvatar: UserAvatar) {        
         userItemListRow?.currentUserID = userAvatar.userAvatarURL
         userItemListRow?.userItemListCollectionView.reloadSections(IndexSet(integer: 0))

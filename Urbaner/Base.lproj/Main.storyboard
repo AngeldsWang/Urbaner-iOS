@@ -471,9 +471,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="i0R-oH-SXX">
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="i0R-oH-SXX">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="375" id="D5s-uR-z8T"/>
+                                                <constraint firstAttribute="height" constant="260" id="avh-qJ-ZEn"/>
+                                            </constraints>
                                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="7" id="mWw-SF-TOK">
                                                 <size key="itemSize" width="115" height="178"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -490,6 +494,10 @@
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xhN-8F-Zf4">
                                                                 <rect key="frame" x="0.0" y="0.0" width="115" height="178"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="115" id="Yb0-xX-che"/>
+                                                                    <constraint firstAttribute="height" constant="178" id="pDZ-Av-WjA"/>
+                                                                </constraints>
                                                             </imageView>
                                                         </subviews>
                                                     </view>

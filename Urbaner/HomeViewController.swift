@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UITableViewController, UserAvatarRowEventDelegate {
 
-    var categories = ["HOT RANKING", "WISHLIST"]
+    var categories = ["HOT RANKING", "WISHLIST", "PICK UP"]
     
     var userItemListRow: UserItemListRow?
     
@@ -107,7 +107,7 @@ class HomeViewController: UITableViewController, UserAvatarRowEventDelegate {
         
         let inputDataDict = NSDictionary(contentsOfFile: inputFile!)
         
-        for (category, bannerURL) in inputDataDict as! Dictionary<String, String> {
+        for (bannerURL, category) in inputDataDict as! Dictionary<String, String> {
             let categoryBanner = CategoryBanner(category, bannerURL)
             categoryBanners.append(categoryBanner)
         }

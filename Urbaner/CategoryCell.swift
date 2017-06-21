@@ -22,6 +22,7 @@ class CategoryCell: UICollectionViewCell {
     }
     
     func setCategoryBanner(_ categoryBanner: CategoryBanner) {
+        print(categoryBanner.categoryBannerURL)
         categoryImageView.image = UIImage(named: categoryBanner.categoryBannerURL)
     }
     

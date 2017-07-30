@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class CategoryBanner {
     
     var categoryBannerURL: String

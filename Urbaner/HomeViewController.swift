@@ -35,14 +35,14 @@ class HomeViewController: UITableViewController, UserAvatarRowEventDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell?
 
-        if(indexPath.section == 0 && indexPath.row == 0){
+        if (indexPath.section == 0 && indexPath.row == 0) {
             cell = tableView.dequeueReusableCell(withIdentifier: "userAvatarRow") as! UserAvatarRow
             
             (cell as! UserAvatarRow).userAvatars = loadUserAvatars()
             (cell as! UserAvatarRow).eventDelegate = self
         }
         
-        if(indexPath.section == 1 && indexPath.row == 0){
+        if (indexPath.section == 1 && indexPath.row == 0) {
             cell = tableView.dequeueReusableCell(withIdentifier: "userItemListRow") as! UserItemListRow
             
             (cell as! UserItemListRow).userItemBanners = loadUserItemBanners()!
@@ -51,7 +51,7 @@ class HomeViewController: UITableViewController, UserAvatarRowEventDelegate {
             userItemListRow = cell as? UserItemListRow
         }
         
-        if(indexPath.section == 2 && indexPath.row == 0){
+        if (indexPath.section == 2 && indexPath.row == 0) {
             cell = tableView.dequeueReusableCell(withIdentifier: "categoryRow") as! CategoryRow
             
             (cell as! CategoryRow).categoryBanners = loadCategoryBanners()
@@ -59,6 +59,22 @@ class HomeViewController: UITableViewController, UserAvatarRowEventDelegate {
 
         
         return cell!
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if (indexPath.section == 0 && indexPath.row == 0) {
+            return 100.0
+        }
+        
+        if (indexPath.section == 1 && indexPath.row == 0) {
+            return 110.0
+        }
+        
+        if (indexPath.section == 2 && indexPath.row == 0) {
+            return 220.0
+        }
+        
+        return 220.0
     }
     
     
